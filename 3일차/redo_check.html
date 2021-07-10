@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택해 주세요.</b></p>
+      <ul>
+        <li>
+          <label><input type="checkbox" value="s_3">선물용 3kg</label>
+          <input type="number" min="0" max="5" value="0">개
+        </li>
+
+        <li>
+          <label><input type="checkbox" value="s_5">선물용 5kg</label>
+          <input type="number" min="0" max="3" value="0">개
+        </li>
+
+        <li>
+          <label><input type="checkbox" value="f_3">가정용 3kg</label>
+          <input type="number" min="0" max="5" value="0">개
+        </li>
+
+        <li>
+          <label><input type="checkbox" value="f_3">가정용 5kg</label>
+          <input type="range" min="0" max="3" value="0">개
+        </li>
+      </ul>
+      <label>
+        <select>
+          <option value="special_3" selected>선물용 3kg</option>
+          <option value="special_5">선물용 5kg</option>
+          <option value="family_3">가정용 3kg</option>
+          <option value="family_5">가정용 5kg</option>
+        </select>
+      </label>
+      <p><b>포장 선택</b></p>
+      <ul>
+        <li><label><input type="radio" name="gift" value="yes">선물 포장</label></li>
+        <li><label><input type="radio" name="gift" value="no">선물 포장 안 함</label></li>
+      </ul>
+      <label>포장 선택</label>
+      <input type="text" list="pack">
+      <datalist id="pack">
+        <option value="yes">선물 포장</option>
+        <option value="no">선물 포장 안 함</option>
+      </datalist>
+    </fieldset>
+
+    <fieldset>
+      <legend>배송 정보</legend>
+      <ul>
+        <li>
+          <label for="user-name">이름</label>
+          <input type="text" id="user-name" required autofocus>
+        </li>
+  
+        <li>
+          <label for="addr">배송 주소</label>
+          <input type="text" id="addr" required>
+        </li>
+  
+        <li>
+          <label for="mail">이메일</label>
+          <input type="text" id="mail">
+        </li>
+  
+        <li>
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone" required>
+        </li>
+        <li>
+          <label for="memo">메모</label>
+          <textarea type="memo" cols="50" rows="5"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+    <div>
+      <input type="submit" value="주문하기">
+      <input type="reset" value="취소하기">
+    </div>
+  </form>
+</body>
+</html>
