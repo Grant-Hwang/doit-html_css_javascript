@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bgi2</title>
+  <style>
+    body {  
+      background-image: url('redo.jpg');
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: fixed;
+      background-size: 300px 300px;
+      
+    }
+    div {
+      width: 400px;
+      height: 250px;
+      padding: 20px;
+      border: 20px solid rgba(204, 204, 204, 0.493);        
+      margin-bottom:20px;
+      overflow: auto;
+      background-image: url('redo.jpg');
+      background-repeat: no-repeat;     
+      background-position: right top;
+      background-size: 100px 100px;
+    }
+    #bg1 {background-origin: padding-box}
+    #bg2 {background-origin: border-box;}
+    #bg3 {background-origin: content-box;}
+  </style>
+</head>
+<body>
+  <div id="bg1">
+    <h1>바빠 시리즈</h1>
+    <h2>바쁜 학생을 위한 ...</h2>
+    <p>쉬운 내용은 압축하여 ...</p>
+  </div>
+  <div id="bg2">
+    <h1>바빠 시리즈</h1>
+    <h2>바쁜 학생을 위한 ...</h2>
+    <p>쉬운 내용은 압축하여 ...</p>
+  </div>
+  <div id="bg3">
+    <h1>바빠 시리즈</h1>
+    <h2>바쁜 학생을 위한 ...</h2>
+    <p>쉬운 내용은 압축하여 ...</p>
+  </div>
+</body>
+</html>

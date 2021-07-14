@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bgi8</title>
+  <style>
+     div {
+			width: 500px;
+			height: 300px;
+		}
+    .grad1 {
+			background: red;
+			background: radial-gradient(white, yellow, red);
+		}
+    .grad2 {
+			background: red;
+			background: radial-gradient(circle, white, yellow, red);
+
+		}
+    .grad3 {
+			background: red;
+			background: radial-gradient(circle closest-side at 20% 20%, white, yellow, red);
+		}
+    .grad4 {
+			background: red;
+			background: radial-gradient(circle closest-corner at 20% 20%, white, yellow, red);
+		}
+    .grad5 {
+			background: red;
+			background: radial-gradient(circle farthest-side at 20% 20%, white, yellow, red);
+		}
+    .grad6 {
+			background: red;
+			background: radial-gradient(circle farthest-corner at 20% 20%, white, yellow, red);
+		}
+  </style>
+</head>
+<body>
+  <div class="grad1"></div>
+  <div class="grad2"></div>
+  <div class="grad3"></div>
+  <div class="grad4"></div>
+  <div class="grad5"></div>
+  <div class="grad6"></div>
+</body>
+</html>
