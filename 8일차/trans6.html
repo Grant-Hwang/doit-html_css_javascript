@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trans6</title>
+  <style>
+    #container {
+			width: 600px;
+			margin: 20px auto;
+		}
+		.origin {
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			float: left;
+			margin: 40px;
+		}
+		.origin > div {				
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+    #skewx:hover {transform: skewX(30deg);}
+    #skewy:hover {transform: skewY(15deg);}
+    #skewxy:hover {transform: skew(-25deg, -15deg);}
+    h1 {
+			width: 500px;
+			height: 80px;
+			background-color: #222;
+			color: #fff;
+			font-weight: bold;			
+      line-height: 80px;
+      text-align: center;	 
+      transform: skewX(15deg);				
+		}
+  </style>
+</head>
+<body>
+  <div id="container">		
+    <div class="origin">
+      <div id="skewx"></div>
+    </div>
+    <div class="origin">
+      <div id="skewy"></div>
+    </div>
+    <div class="origin">
+      <div id="skewxy"></div>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br>
+  <div id="container">		
+    <h1>CSS 변형 함수 익히기</h1>
+  </div>
+</body>
+</html>
