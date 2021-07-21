@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reutrn1</title>
+</head>
+<body>
+  <script>
+    (function() {
+      var userName = prompt("이름을 입력하세요.");
+      document.write("안녕하세요? " + userName + "님!" + "<br>");
+    }())
+    function addNumber(n1, n2) {
+      var sum = n1 + n2;
+      return sum;
+    }
+    var result = addNumber(2, 3);
+    document.write("두 수를 더 한 값 : " + result);
+  </script>
+</body>
+</html>

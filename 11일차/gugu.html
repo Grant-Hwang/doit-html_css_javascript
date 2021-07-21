@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gugu</title>
+  <link rel="stylesheet" href="gugu.css">
+</head>
+<body>
+  <script>
+    var x, y;
+
+    for (y = 1; y < 10; y++) {
+      document.write("<div>");
+      document.write("<h3>" + y + "단</h3>");
+      for (x = 1; x < 10; x++) {
+        document.write(y + " X " + x + " = " + y * x + "<br>");
+      }
+      document.write("</div>");
+    }
+  </script>
+</body>
+</html>

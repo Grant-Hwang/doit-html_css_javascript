@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q2</title>
+</head>
+<body>
+  <script>        
+    var n1 = parseInt(prompt("첫 숫자 : "));  
+    var n2 = parseInt(prompt("두 번째 숫자 : "));  
+
+		compare(n1, n2);
+
+		function compare(x, y) {
+      if (x === y) alert(x + "와 " + y + "는 같습니다.");       
+      else if (x > y) alert( x + "가 " + y + "보다 큽니다.");      
+      else alert(y + "가 " + x + "보다 큽니다.");       
+		}
+  </script>
+</body>
+</html>
