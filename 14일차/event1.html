@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>event1</title>
+</head>
+<body>
+  <img src="images/cup-1.png" id="cup">
+
+  <script>
+		var cup = document.querySelector("#cup");
+
+    cup.onclick = function(){
+      alert("이미지를 클릭했습니다");
+      cup.src = "images/cup-2.png";
+      alert("이벤트 유형: " + event.type + ", 이벤트 발생 위치: " + event.pageX + ", " + event.pageY);
+      alert("클릭한 이미지 파일: " + this.src);
+    }
+    
+	</script>
+</body>
+</html>
